@@ -5,24 +5,10 @@ name = input("Enter your name: ")
 surname = input("Enter your surname: ")
 number = (input("Enter your number: "))
 
-
-# creating lists from inputs
-def name_fun(name_):
-    return [n for n in name_]
-
-
-def surname_fun(surname_):
-    return [s for s in surname_]
-
-
-def number_fun(number_):
-    return [s for s in number_]
-
-
 # assigning the lists to variables
-name_list = name_fun(name)
-surname_list = surname_fun(surname)
-number_list = number_fun(number)
+name_list = [n for n in name]
+surname_list = [n for n in surname]
+number_list = [n for n in number]
 special_characters = ["$", "!", "@", "#", "%"]
 
 # choosing random letters from the above lists
